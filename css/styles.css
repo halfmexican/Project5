@@ -79,7 +79,7 @@ nav ul li a {
     font-size: 24px;
 }
 
-nav ul li a:hover {
+nav ul li hover {
     text-decoration: underline;
     transform: translateY(-10px);
     transition: transform 0.2s ease-in-out;
@@ -559,41 +559,6 @@ figcaption {
 .terms-privacy {
     margin: 20px 0;
     font-size: 14px;
-}
-
-.social-login {
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
-}
-
-.social-buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.social-buttons button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 24px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.social-buttons button:hover {
-    background-color: #f8f9fa;
-}
-
-.social-buttons img {
-    width: 24px;
-    height: 24px;
 }
 
 /* Responsive adjustments for auth pages */

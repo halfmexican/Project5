@@ -1,3 +1,30 @@
+
+// Import the functions you need from the Firebase SDKs
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
+
+// Your web app's Firebase configuration (ensure this matches your firebaseConfig in other files)
+const firebaseConfig = {
+
+  apiKey: "AIzaSyCTSAROvZAhn4omwyaR4xaLuRV1HTjKNHQ",
+
+  authDomain: "crochet-corner-302a9.firebaseapp.com",
+
+  projectId: "crochet-corner-302a9",
+
+  storageBucket: "crochet-corner-302a9.appspot.com",
+
+  messagingSenderId: "49405618553",
+
+  appId: "1:49405618553:web:47ac966757f98b28a4e7a8"
+
+};
+
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
 // Fetch patterns data from the JSON file
 fetch('data/patterns.json')
   .then(response => {
@@ -57,7 +84,11 @@ function renderPatternGallery(patterns) {
     gallery.appendChild(article);
   });
 }
+
 function displayError(message) {
   const gallery = document.getElementById('pattern-gallery');
   gallery.innerHTML = `<p>${message}</p>`;
 }
+
+// At the bottom of main.js, add:
+export { auth };
