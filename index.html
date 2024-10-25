@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crochet Corner - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Crochet Corner - beginner-friendly crochet patterns and blogs, featuring cute dinosaur patterns and more.">
+    <meta name="keywords" content="crochet, patterns, beginner, dinosaur, tutorials, crafts">
+    <meta name="author" content="Jose Hunter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/yarn-favicon.png" type="image/png">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/yarn.png" alt="Yarn Icon" id="header-logo">
+        <h1>Crochet Corner</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="patterns.html">Patterns</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="auth.html" id="authLink">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome User, to Crochet Corner!</h2>
+        <section id="welcome" class="card">
+            <p>Discover our collection of beginner-friendly crochet patterns. Dive into our latest addition: the cutest little dinosaur patterns that are sure to bring joy to your crafting journey. we are constantly updating our site with new patterns and tutorials. Stay tuned for more exciting content coming soon! Whether you're a beginner or an experienced crocheter, you'll find something to inspire your next project.</p>
+            <img src="img/green.png" alt="Cute Crochet Dinosaur">
+        </section>
+
+        <section id="featured-patterns">
+            <h2>Featured Patterns</h2>
+            <div id= "pattern-gallery"  class="pattern-gallery">
+               <!-- dynamiclly added patterns --->
+            </div>
+        </section>
+
+        <h2>Attribution</h2>
+        <section id="attribution" class="card">
+            <p>All images were taken by myself or my partner</p>
+        </section>
+
+        <section id="latest-blog">
+            <h2>From the Blog</h2>
+            <h3><a href="crochet-hooks-guide.html">Crochet Hooks: A Beginner's Guide</a></h3>
+            <p>Get to know the different types of crochet hooks and how to choose the right one for your needs.</p>
+        </section>
+
+        <section id="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter to receive the latest patterns and updates straight to your inbox!</p>
+            <form action="#" method="post">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 by Jose Hunter. All rights reserved.</p>
+        <p><a href="https://www.ravelry.com/" target="_blank">Ravelry</a> | <a href="https://www.youtube.com/user/bobwilson123" target="_blank">Crochet Tutorials on YouTube</a></p>
+    </footer>
+</body>
+</html>
+
+<!-- Firebase App (the core Firebase SDK) -->
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+<!-- Firebase Authentication -->
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js"></script>

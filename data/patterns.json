@@ -1,0 +1,415 @@
+{
+  "patterns": [
+    {
+      "name": "Tiny T-Rex",
+      "images": [
+        {
+          "src": "img/green.png",
+          "alt": "Tiny T-Rex in Green",
+          "caption": "Green Tiny T-Rex"
+        },
+        {
+          "src": "img/orange.png",
+          "alt": "Tiny T-Rex in Orange",
+          "caption": "Orange Tiny T-Rex"
+        },
+        {
+          "src": "img/pink.png",
+          "alt": "Tiny T-Rex in Pink",
+          "caption": "Pink Tiny T-Rex"
+        },
+        {
+          "src": "img/red.png",
+          "alt": "Tiny T-Rex in Red",
+          "caption": "Red Tiny T-Rex"
+        },
+        {
+          "src": "img/yellow.png",
+          "alt": "Tiny T-Rex in Yellow",
+          "caption": "Yellow Tiny T-Rex"
+        }
+      ],
+      "description": "Create your own tiny T-Rex with this easy-to-follow pattern.",
+      "details": [
+        { "title": "Skill Level", "content": "Beginner" },
+        { "title": "Finished Size", "content": "Approximately 6 inches tall" },
+        {
+          "title": "Materials Needed",
+          "content": "<ul><li>Worsted weight yarn in your choice of color (green, orange, pink, red, yellow)</li><li>Small amount of white yarn for teeth (optional)</li><li>Size G (4.0 mm) crochet hook</li><li>Polyester fiberfill stuffing</li><li>Safety eyes (6 mm) or black embroidery thread</li><li>Tapestry needle</li><li>Stitch marker</li><li>Scissors</li></ul>"
+        },
+        {
+          "title": "Gauge",
+          "content": "Not critical for this project. Ensure stitches are tight to prevent stuffing from showing."
+        },
+        {
+          "title": "Abbreviations",
+          "content": "<ul><li>st(s) - stitch(es)</li><li>ch - chain</li><li>sc - single crochet</li><li>inc - increase (2 sc in same st)</li><li>dec - decrease (sc two sts together)</li><li>sl st - slip stitch</li><li>FO - finish off</li><li>(...) - repeat the instructions within parentheses</li></ul>"
+        }
+      ],
+      "instructionsSections": [
+        {
+          "title": "Head",
+          "isOrdered": true,
+          "steps": [
+            "Ch 2.",
+            "Rnd 1: 6 sc in 2nd ch from hook. (6 sts)",
+            "Rnd 2: Inc in each st around. (12 sts)",
+            "Rnd 3: (Sc in next st, inc in next st) around. (18 sts)",
+            "Rnd 4: (Sc in next 2 sts, inc in next st) around. (24 sts)",
+            "Rnd 5: (Sc in next 3 sts, inc in next st) around. (30 sts)",
+            "Rnd 6-10: Sc in each st around. (30 sts)",
+            "Rnd 11: (Sc in next 3 sts, dec over next 2 sts) around. (24 sts)",
+            "Rnd 12: (Sc in next 2 sts, dec over next 2 sts) around. (18 sts)",
+            "Rnd 13: (Sc in next st, dec over next 2 sts) around. (12 sts)",
+            "Stuff the head firmly.",
+            "Rnd 14: Dec over next 2 sts around. (6 sts)",
+            "Fasten off, leaving a long tail for sewing."
+          ]
+        },
+        {
+          "title": "Body",
+          "isOrdered": true,
+          "steps": [
+            "Ch 2.",
+            "Rnd 1: 6 sc in 2nd ch from hook. (6 sts)",
+            "Rnd 2: Inc in each st around. (12 sts)",
+            "Rnd 3: (Sc in next st, inc in next st) around. (18 sts)",
+            "Rnd 4: (Sc in next 2 sts, inc in next st) around. (24 sts)",
+            "Rnd 5-9: Sc in each st around. (24 sts)",
+            "Rnd 10: (Sc in next 2 sts, dec over next 2 sts) around. (18 sts)",
+            "Rnd 11: (Sc in next st, dec over next 2 sts) around. (12 sts)",
+            "Stuff the body firmly.",
+            "Rnd 12: Dec over next 2 sts around. (6 sts)",
+            "Fasten off, leaving a long tail for sewing."
+          ]
+        },
+        {
+          "title": "Assembly",
+          "isOrdered": true,
+          "steps": [
+            "Sew the head to the body.",
+            "Sew the arms to the sides of the body.",
+            "Sew the legs to the bottom of the body.",
+            "Sew the tail to the back of the body.",
+            "Embroider eyes or attach safety eyes.",
+            "Embroider teeth with white yarn if desired."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cute Cows",
+      "images": [
+        {
+          "src": "img/amanita.jpg",
+          "alt": "red crochet cow",
+          "caption": "Amanita"
+        },
+        {
+          "src": "img/apollo.jpg",
+          "alt": "yellow crochet cow",
+          "caption": "Apollo"
+        },
+        {
+          "src": "img/cam.jpg",
+          "alt": "orange crochet cow",
+          "caption": "Cam"
+        },
+        {
+          "src": "img/mei.jpg",
+          "alt": "pink crochet cow",
+          "caption": "Mei"
+        },
+        {
+          "src": "img/phyllis.jpg",
+          "alt": "green crochet cow",
+          "caption": "Phyllis"
+        }
+      ],
+      "description": "Check out these adorable colorful cows! take a matching personality quiz to find the perfect cow for you!",
+      "details": [
+        { "title": "Skill Level", "content": "Beginner" },
+        { "title": "Finished Size", "content": "Approximately 6 inches tall" },
+        {
+          "title": "Materials Needed",
+          "content": "<ul><li>Worsted weight yarn in your choice of color (green, orange, pink, red, yellow)</li><li>Small amount of white yarn for teeth (optional)</li><li>Size G (4.0 mm) crochet hook</li><li>Polyester fiberfill stuffing</li><li>Safety eyes (6 mm) or black embroidery thread</li><li>Tapestry needle</li><li>Stitch marker</li><li>Scissors</li></ul>"
+        },
+        {
+          "title": "Gauge",
+          "content": "Not critical for this project. Ensure stitches are tight to prevent stuffing from showing."
+        },
+        {
+          "title": "Abbreviations",
+          "content": "<ul><li>st(s) - stitch(es)</li><li>ch - chain</li><li>sc - single crochet</li><li>inc - increase (2 sc in same st)</li><li>dec - decrease (sc two sts together)</li><li>sl st - slip stitch</li><li>FO - finish off</li><li>(...) - repeat the instructions within parentheses)</li></ul>"
+        }
+      ],
+      "instructionsSections": [
+        {
+          "title": "Head",
+          "isOrdered": true,
+          "steps": [
+            "Ch 2.",
+            "Rnd 1: 6 sc in 2nd ch from hook. (6 sts)",
+            "Rnd 2: Inc in each st around. (12 sts)",
+            "Rnd 3: (Sc in next st, inc in next st) around. (18 sts)",
+            "Rnd 4: (Sc in next 2 sts, inc in next st) around. (24 sts)",
+            "Rnd 5: (Sc in next 3 sts, inc in next st) around. (30 sts)",
+            "Rnd 6-10: Sc in each st around. (30 sts)",
+            "Rnd 11: (Sc in next 3 sts, dec over next 2 sts) around. (24 sts)",
+            "Rnd 12: (Sc in next 2 sts, dec over next 2 sts) around. (18 sts)",
+            "Rnd 13: (Sc in next st, dec over next 2 sts) around. (12 sts)",
+            "Stuff the head firmly.",
+            "Rnd 14: Dec over next 2 sts around. (6 sts)",
+            "Fasten off, leaving a long tail for sewing."
+          ]
+        },
+        {
+          "title": "Body",
+          "isOrdered": true,
+          "steps": [
+            "Ch 2.",
+            "Rnd 1: 6 sc in 2nd ch from hook. (6 sts)",
+            "Rnd 2: Inc in each st around. (12 sts)",
+            "Rnd 3: (Sc in next st, inc in next st) around. (18 sts)",
+            "Rnd 4: (Sc in next 2 sts, inc in next st) around. (24 sts)",
+            "Rnd 5-9: Sc in each st around. (24 sts)",
+            "Rnd 10: (Sc in next 2 sts, dec over next 2 sts) around. (18 sts)",
+            "Rnd 11: (Sc in next st, dec over next 2 sts) around. (12 sts)",
+            "Stuff the body firmly.",
+            "Rnd 12: Dec over next 2 sts around. (6 sts)",
+            "Fasten off, leaving a long tail for sewing."
+          ]
+        },
+        {
+          "title": "Assembly",
+          "isOrdered": true,
+          "steps": [
+            "Sew the head to the body.",
+            "Sew the arms to the sides of the body.",
+            "Sew the legs to the bottom of the body.",
+            "Sew the tail to the back of the body.",
+            "Embroider eyes or attach safety eyes.",
+            "Embroider teeth with white yarn if desired."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Awesome Whales",
+      "images": [
+        {
+          "src": "img/whales.png",
+          "alt": "Awesome Whale Pattern",
+          "caption": "Underwater Whale Pattern"
+        }
+      ],
+      "description": "Bring the ocean to your home with these awesome whale patterns. These underwater creatures come in many color variations.",
+      "details": [
+        { "title": "Skill Level", "content": "Beginner" },
+        { "title": "Finished Size", "content": "Approximately 8 inches long" },
+        {
+          "title": "Materials Needed",
+          "content": "<ul><li>Worsted weight yarn in blue or your choice of color</li><li>Size G (4.0 mm) crochet hook</li><li>Polyester fiberfill stuffing</li><li>Safety eyes (6 mm) or black embroidery thread</li><li>Tapestry needle</li><li>Stitch marker</li><li>Scissors</li></ul>"
+        },
+        {
+          "title": "Gauge",
+          "content": "Not critical for this project. Ensure stitches are tight to prevent stuffing from showing."
+        },
+        {
+          "title": "Abbreviations",
+          "content": "<ul><li>st(s) - stitch(es)</li><li>ch - chain</li><li>sc - single crochet</li><li>inc - increase (2 sc in same st)</li><li>dec - decrease (sc two sts together)</li><li>sl st - slip stitch</li><li>FO - finish off</li><li>(...) - repeat the instructions within parentheses</li></ul>"
+        }
+      ],
+      "instructionsSections": [
+        {
+          "title": "Body",
+          "isOrdered": true,
+          "steps": [
+            "Ch 2.",
+            "Rnd 1: 6 sc in 2nd ch from hook. (6 sts)",
+            "Rnd 2: Inc in each st around. (12 sts)",
+            "Rnd 3: (Sc in next st, inc in next st) around. (18 sts)",
+            "Rnd 4: (Sc in next 2 sts, inc in next st) around. (24 sts)",
+            "Rnd 5-10: Sc in each st around. (24 sts)",
+            "Rnd 11: (Sc in next 2 sts, dec over next 2 sts) around. (18 sts)",
+            "Rnd 12: (Sc in next st, dec over next 2 sts) around. (12 sts)",
+            "Stuff the body firmly.",
+            "Rnd 13: Dec over next 2 sts around. (6 sts)",
+            "Fasten off, leaving a long tail for sewing."
+          ]
+        },
+        {
+          "title": "Fins and Tail",
+          "isOrdered": true,
+          "steps": [
+            "Ch 2.",
+            "Rnd 1: 4 sc in 2nd ch from hook. (4 sts)",
+            "Rnd 2: Inc in each st around. (8 sts)",
+            "Rnd 3-4: Sc in each st around. (8 sts)",
+            "Fasten off, leaving a tail for sewing.",
+            "Make 2 fins and 1 tail, then sew them to the body."
+          ]
+        },
+        {
+          "title": "Assembly",
+          "isOrdered": true,
+          "steps": [
+            "Sew the fins and tail to the body.",
+            "Embroider eyes or attach safety eyes.",
+            "Finish off by weaving in the loose ends."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Happy Tardigrade",
+      "images": [
+        {
+          "src": "img/tardi.jpg",
+          "alt": "Tardigrade Crochet Pattern",
+          "caption": "Water Bear Cuddle Partner"
+        }
+      ],
+      "description": "This cute water bear makes a great cuddle partner.",
+      "details": [
+        { "title": "Skill Level", "content": "Intermediate" },
+        { "title": "Finished Size", "content": "Approximately 5 inches long" },
+        {
+          "title": "Materials Needed",
+          "content": "<ul><li>Worsted weight yarn in grey or your choice of color</li><li>Size G (4.0 mm) crochet hook</li><li>Polyester fiberfill stuffing</li><li>Safety eyes (6 mm) or black embroidery thread</li><li>Tapestry needle</li><li>Stitch marker</li><li>Scissors</li></ul>"
+        },
+        {
+          "title": "Gauge",
+          "content": "Not critical for this project. Ensure stitches are tight to prevent stuffing from showing."
+        },
+        {
+          "title": "Abbreviations",
+          "content": "<ul><li>st(s) - stitch(es)</li><li>ch - chain</li><li>sc - single crochet</li><li>inc - increase (2 sc in same st)</li><li>dec - decrease (sc two sts together)</li><li>sl st - slip stitch</li><li>FO - finish off</li><li>(...) - repeat the instructions within parentheses)</li></ul>"
+        }
+      ],
+      "instructionsSections": [
+        {
+          "title": "Body",
+          "isOrdered": true,
+          "steps": [
+            "Ch 2.",
+            "Rnd 1: 6 sc in 2nd ch from hook. (6 sts)",
+            "Rnd 2: Inc in each st around. (12 sts)",
+            "Rnd 3: (Sc in next st, inc in next st) around. (18 sts)",
+            "Rnd 4: (Sc in next 2 sts, inc in next st) around. (24 sts)",
+            "Rnd 5-8: Sc in each st around. (24 sts)",
+            "Rnd 9: (Sc in next 2 sts, dec over next 2 sts) around. (18 sts)",
+            "Rnd 10: (Sc in next st, dec over next 2 sts) around. (12 sts)",
+            "Stuff the body firmly.",
+            "Rnd 11: Dec over next 2 sts around. (6 sts)",
+            "Fasten off, leaving a long tail for sewing."
+          ]
+        },
+        {
+          "title": "Legs",
+          "isOrdered": true,
+          "steps": [
+            "Ch 2.",
+            "Rnd 1: 4 sc in 2nd ch from hook. (4 sts)",
+            "Rnd 2: Inc in each st around. (8 sts)",
+            "Rnd 3-4: Sc in each st around. (8 sts)",
+            "Fasten off, leaving a tail for sewing.",
+            "Make 6 legs and sew them evenly to the sides of the body."
+          ]
+        },
+        {
+          "title": "Assembly",
+          "isOrdered": true,
+          "steps": [
+            "Sew the legs to the body.",
+            "Embroider eyes or attach safety eyes.",
+            "Weave in all loose ends."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Teddy Bear",
+      "images": [
+        {
+          "src": "img/teddy.jpg",
+          "alt": "Teddy Bear Crochet Pattern",
+          "caption": "Adorable Teddy Bear"
+        }
+      ],
+      "description": "Create an adorable teddy bear!",
+      "details": [
+        { "title": "Skill Level", "content": "Beginner" },
+        { "title": "Finished Size", "content": "Approximately 7 inches tall" },
+        {
+          "title": "Materials Needed",
+          "content": "<ul><li>Worsted weight yarn in brown or your choice of color</li><li>Size G (4.0 mm) crochet hook</li><li>Polyester fiberfill stuffing</li><li>Safety eyes (6 mm) or black embroidery thread</li><li>Tapestry needle</li><li>Stitch marker</li><li>Scissors</li></ul>"
+        },
+        {
+          "title": "Gauge",
+          "content": "Not critical for this project. Ensure stitches are tight to prevent stuffing from showing."
+        },
+        {
+          "title": "Abbreviations",
+          "content": "<ul><li>st(s) - stitch(es)</li><li>ch - chain</li><li>sc - single crochet</li><li>inc - increase (2 sc in same st)</li><li>dec - decrease (sc two sts together)</li><li>sl st - slip stitch</li><li>FO - finish off</li><li>(...) - repeat the instructions within parentheses)</li></ul>"
+        }
+      ],
+      "instructionsSections": [
+        {
+          "title": "Head",
+          "isOrdered": true,
+          "steps": [
+            "Ch 2.",
+            "Rnd 1: 6 sc in 2nd ch from hook. (6 sts)",
+            "Rnd 2: Inc in each st around. (12 sts)",
+            "Rnd 3: (Sc in next st, inc in next st) around. (18 sts)",
+            "Rnd 4: (Sc in next 2 sts, inc in next st) around. (24 sts)",
+            "Rnd 5-7: Sc in each st around. (24 sts)",
+            "Rnd 8: (Sc in next 2 sts, dec over next 2 sts) around. (18 sts)",
+            "Rnd 9: (Sc in next st, dec over next 2 sts) around. (12 sts)",
+            "Stuff the head firmly.",
+            "Rnd 10: Dec over next 2 sts around. (6 sts)",
+            "Fasten off, leaving a long tail for sewing."
+          ]
+        },
+        {
+          "title": "Body",
+          "isOrdered": true,
+          "steps": [
+            "Ch 2.",
+            "Rnd 1: 6 sc in 2nd ch from hook. (6 sts)",
+            "Rnd 2: Inc in each st around. (12 sts)",
+            "Rnd 3: (Sc in next st, inc in next st) around. (18 sts)",
+            "Rnd 4-8: Sc in each st around. (18 sts)",
+            "Rnd 9: (Sc in next st, dec over next 2 sts) around. (12 sts)",
+            "Stuff the body firmly.",
+            "Rnd 10: Dec over next 2 sts around. (6 sts)",
+            "Fasten off, leaving a long tail for sewing."
+          ]
+        },
+        {
+          "title": "Arms and Legs",
+          "isOrdered": true,
+          "steps": [
+            "Ch 2.",
+            "Rnd 1: 6 sc in 2nd ch from hook. (6 sts)",
+            "Rnd 2-4: Sc in each st around. (6 sts)",
+            "Fasten off, leaving a tail for sewing.",
+            "Make 2 arms and 2 legs, then sew them to the body."
+          ]
+        },
+        {
+          "title": "Assembly",
+          "isOrdered": true,
+          "steps": [
+            "Sew the head to the body.",
+            "Sew the arms and legs to the body.",
+            "Embroider eyes or attach safety eyes.",
+            "Weave in all loose ends."
+          ]
+        }
+      ]
+    }
+  ]
+}
+

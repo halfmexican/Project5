@@ -1,0 +1,18 @@
+{
+  "name": "project4",
+  "version": "1.0.0",
+  "description": "Dynamic Site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crochet"
+  ],
+  "type": "module",
+  "author": "Jose H",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "firebase": "^11.0.1"
+  }
+}
