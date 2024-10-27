@@ -15,9 +15,8 @@ function updateAuthButton() {
 document.addEventListener('DOMContentLoaded', updateAuthButton);
 
 document.getElementById('logoutLink').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default link behavior
-    localStorage.setItem('isLoggedIn', 'false'); // Update the login state
-    updateAuthButton(); // Update the navbar links
-    // Optionally, redirect the user to the home or login page
-    window.location.href = '/';
+    event.preventDefault();
+    localStorage.setItem('isLoggedIn', 'false');
+    updateAuthButton(); 
+    window.location.href = 'index.html';
 });
