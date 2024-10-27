@@ -1,5 +1,5 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCTSAROvZAhn4omwyaR4xaLuRV1HTjKNHQ",
@@ -11,7 +11,57 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+const auth = getAuth();
+
+const loginSection = document.getElementById('login-section');
+const signupSection = document.getElementById('signup-section');
+const passwordResetSection = document.getElementById('password-reset-section');
+const forgotPasswordLink = document.getElementById('forgot-password-link');
+const backToLoginLink = document.getElementById('back-to-login-link');
+
+passwordResetSection.style.display = 'none';
+forgotPasswordLink.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // Hide login and signup sections
+    loginSection.style.display = 'none';
+    signupSection.style.display = 'none';
+
+    // Show password reset section
+    passwordResetSection.style.display = 'block';
+});
+
+// Event listener for "Back to Login" link
+backToLoginLink.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // Hide password reset section
+    passwordResetSection.style.display = 'none';
+
+    // Show login and signup sections
+    loginSection.style.display = 'block';
+    signupSection.style.display = 'block';
+});
+
+// Handle the password reset form submission
+const passwordResetForm = document.getElementById('password-reset-form');
+const passwordResetMessage = document.getElementById('password-reset-message');
+
+passwordResetForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.getElementById('reset-email').value;
+
+    sendPasswordResetEmail(auth, email)
+        .then(() => {
+            passwordResetMessage.textContent = 'Password reset email sent. Please check your inbox.';
+            passwordResetMessage.style.color = 'green';
+        })
+        .catch((error) => {
+            console.error('Error sending password reset email:', error);
+            passwordResetMessage.textContent = 'Error sending password reset email: ' + error.message;
+            passwordResetMessage.style.color = 'red';
+        });
+});
 
 // Function to update the Auth button visibility
 function updateAuthButton() {
@@ -56,7 +106,6 @@ const signupConfirmPasswordInput = document.getElementById('signupConfirmPasswor
 const signupPasswordError = document.getElementById('signupPasswordError');
 const signupConfirmPasswordError = document.getElementById('signupConfirmPasswordError');
 
-// Real-time Password Validation
 function validatePasswords() {
   const password = signupPasswordInput.value;
   const confirmPassword = signupConfirmPasswordInput.value;
@@ -76,7 +125,6 @@ function validatePasswords() {
   }
 }
 
-// Attach event listeners for real-time validation
 signupPasswordInput.addEventListener('input', validatePasswords);
 signupConfirmPasswordInput.addEventListener('input', validatePasswords);
 
@@ -112,7 +160,6 @@ signupForm.addEventListener('submit', (e) => {
     });
 });
 
-// Function to handle logout
 function logout() {
   localStorage.setItem('isLoggedIn', 'false');
   updateAuthButton();

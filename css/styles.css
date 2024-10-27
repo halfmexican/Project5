@@ -58,6 +58,11 @@ p {
     padding-bottom: 12px;
 }
 
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 header h1 {
     font-size: 2em;
 }
@@ -623,14 +628,12 @@ figcaption {
     box-sizing: border-box;
 }
 
-/* Adjust Labels */
 .signup-section .form-group label {
     margin-bottom: 8px;
     font-weight: 500;
     color: var(--text-color);
 }
 
-/* Error Messages Full Width */
 .signup-section .error-message {
     display: block;
     margin-top: 5px;
