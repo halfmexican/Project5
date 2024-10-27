@@ -82,8 +82,21 @@ const loginForm = document.getElementById('loginForm');
 loginForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
+  // Clear previous error messages
+  document.getElementById('loginEmailError').textContent = '';
+  document.getElementById('loginPasswordError').textContent = '';
+
   const email = document.getElementById('loginEmail').value;
   const password = document.getElementById('loginPassword').value;
+
+  if (!email) {
+    document.getElementById('loginEmailError').textContent = 'Please enter your email address.';
+    return;
+  }
+  if (!password) {
+    document.getElementById('loginPasswordError').textContent = 'Please enter your password.';
+    return;
+  }
 
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
@@ -93,9 +106,25 @@ loginForm.addEventListener('submit', (e) => {
       window.location.href = 'index.html';
     })
     .catch((error) => {
-      alert(`Login Error: ${error.message}`);
-    });
-});
+      const errorCode = error.code;
+      const errorMessage = error.message;
+
+      if (errorCode === 'auth/user-not-found') {
+        document.getElementById('loginEmailError').textContent = 'No user found with this email.';
+      } else if (errorCode === 'auth/wrong-password') {
+        document.getElementById('loginPasswordError').textContent = 'Incorrect password. Please try again.';
+      } else if (errorCode === 'auth/invalid-email') {
+        document.getElementById('loginEmailError').textContent = 'Please enter a valid email address.';
+      } else if (errorCode === 'auth/too-many-requests') {
+        document.getElementById('loginPasswordError').textContent = 'Too many failed attempts. Please try again later.';
+      } else if (errorCode === 'auth/email-already-in-use') {
+        document.getElementById('loginEmailError').textContent = 'This email is already registered. Please login or use a different email.';
+      } else {
+        // General error message
+        document.getElementById('loginPasswordError').textContent = 'Login failed. Please try again.';
+        console.error('Login Error:', errorMessage);
+      }
+    });});
 
 // Password Requirements Regex
 const passwordRequirements = /^(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
@@ -136,7 +165,10 @@ signupForm.addEventListener('submit', (e) => {
   const password = signupPasswordInput.value;
   const confirmPassword = signupConfirmPasswordInput.value;
 
-  // Validate password requirements
+  document.getElementById('signupEmailError').textContent = '';
+  signupPasswordError.textContent = '';
+  signupConfirmPasswordError.textContent = '';
+
   if (!passwordRequirements.test(password)) {
     signupPasswordError.textContent = 'Password does not meet the requirements.';
     return;
@@ -156,14 +188,22 @@ signupForm.addEventListener('submit', (e) => {
       window.location.href = 'index.html';
     })
     .catch((error) => {
-      alert(`Signup Error: ${error.message}`);
+      const errorCode = error.code;
+      const errorMessage = error.message;
+
+      if (errorCode === 'auth/email-already-in-use') {
+        document.getElementById('signupEmailError').textContent = 'This email is already registered. Please use a different email or log in.';
+      } else if (errorCode === 'auth/invalid-email') {
+        document.getElementById('signupEmailError').textContent = 'Please enter a valid email address.';
+      } else if (errorCode === 'auth/weak-password') {
+        signupPasswordError.textContent = 'Your password is too weak. Please choose a stronger password.';
+      } else {
+        // General error message
+        document.getElementById('signupGeneralError').textContent = 'Signup failed. Please try again.';
+        console.error('Signup Error:', errorMessage);
+      }
     });
 });
-
-function logout() {
-  localStorage.setItem('isLoggedIn', 'false');
-  updateAuthButton();
-}
 
 const togglePasswordIcons = document.querySelectorAll('.toggle-password');
 
