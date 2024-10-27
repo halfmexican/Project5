@@ -13,20 +13,30 @@ const firebaseConfig = {
 document.addEventListener('DOMContentLoaded', function() {
     const app = initializeApp(firebaseConfig);
     const db = getDatabase();
-    
-    const urlParams = new URLSearchParams(window.location.search);
-    const patternIndex = urlParams.get('index');
 
-    if (patternIndex) {
-        const patternRef = ref(db, `patterns/${patternIndex}`);
-        
-        get(patternRef)
+    const urlParams = new URLSearchParams(window.location.search);
+    const patternNameParam = urlParams.get('name');
+    const patternName = decodeURIComponent(patternNameParam);
+
+    if (patternName) {
+        const patternsRef = ref(db, 'patterns');
+
+        get(patternsRef)
             .then((snapshot) => {
                 if (snapshot.exists()) {
-                    const pattern = snapshot.val();
-                    renderPattern(pattern);
+                    const patterns = snapshot.val();
+                    // Convert patterns from object to array if necessary
+                    const patternsArray = Array.isArray(patterns) ? patterns : Object.values(patterns);
+
+                    const pattern = patternsArray.find(p => p.name.toLowerCase() === patternName.toLowerCase());
+
+                    if (pattern) {
+                        renderPattern(pattern);
+                    } else {
+                        displayError('Pattern not found.');
+                    }
                 } else {
-                    displayError('Pattern not found.');
+                    displayError('No patterns found in database.');
                 }
             })
             .catch(error => {
@@ -42,6 +52,7 @@ function renderPattern(pattern) {
     document.getElementById('pattern-name').textContent = pattern.name;
 
     const imagesSection = document.getElementById('images-section');
+    imagesSection.innerHTML = ''; // Clear existing content
     const galleryTitle = document.createElement('h3');
     galleryTitle.textContent = 'Gallery';
     imagesSection.appendChild(galleryTitle);
@@ -49,22 +60,28 @@ function renderPattern(pattern) {
     const galleryGrid = document.createElement('div');
     galleryGrid.classList.add('gallery-grid');
 
-    pattern.images.forEach(image => {
-        const figure = document.createElement('figure');
-        const img = document.createElement('img');
-        img.src = image.src;
-        img.alt = image.alt;
-        img.classList.add('responsive-image');
-        figure.appendChild(img);
+    if (pattern.images && pattern.images.length > 0) {
+        pattern.images.forEach(image => {
+            const figure = document.createElement('figure');
+            const img = document.createElement('img');
+            img.src = image.src;
+            img.alt = image.alt;
+            img.classList.add('responsive-image');
+            figure.appendChild(img);
 
-        if (image.caption) {
-            const figcaption = document.createElement('figcaption');
-            figcaption.textContent = image.caption;
-            figure.appendChild(figcaption);
-        }
+            if (image.caption) {
+                const figcaption = document.createElement('figcaption');
+                figcaption.textContent = image.caption;
+                figure.appendChild(figcaption);
+            }
 
-        galleryGrid.appendChild(figure);
-    });
+            galleryGrid.appendChild(figure);
+        });
+    } else {
+        const noImagesMsg = document.createElement('p');
+        noImagesMsg.textContent = 'No images available.';
+        galleryGrid.appendChild(noImagesMsg);
+    }
 
     imagesSection.appendChild(galleryGrid);
 

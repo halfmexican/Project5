@@ -42,6 +42,7 @@ function renderSkillGallery() {
       colorBlock.style.backgroundColor = skill.color;
       colorBlock.style.height = '200px';
       colorBlock.style.width = '100%';
+      colorBlock.classList.add('color-block');
       article.appendChild(colorBlock);
 
       const title = document.createElement('h3');
@@ -91,14 +92,13 @@ function renderPatternGallery(patterns) {
       const description = document.createElement('p');
       description.textContent = pattern.description;
       article.appendChild(description);
-
       // View Pattern Button
       const link = document.createElement('a');
-      link.href = `pattern.html?index=${index}`;
+      const patternNameEncoded = encodeURIComponent(pattern.name);
+      link.href = `pattern.html?name=${patternNameEncoded}`;
       link.classList.add('button');
       link.textContent = 'View Pattern';
       article.appendChild(link);
-
       gallery.appendChild(article);
     });
 }

@@ -506,8 +506,7 @@ figcaption {
 }
 
 .forgot-password {
-    color: var(--purple-accent-bg);
-    text-decoration: none;
+    color: darken (var(--purple-accent-bg));
 }
 
 .forgot-password:hover {
@@ -649,6 +648,7 @@ figcaption {
 }
 
 .password-field {
+    margin-bottom: 5px;
 }
 
 /* Terms and Privacy */
@@ -659,4 +659,14 @@ figcaption {
 
 .hidden {
     display: none;
+}
+
+.color-block {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.color-block:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s;
 }
