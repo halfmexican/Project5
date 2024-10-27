@@ -99,6 +99,7 @@ section {
 h2 {
     color: var(--purple-accent-bg);
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .card {
@@ -451,10 +452,6 @@ figcaption {
     margin-bottom: 15px;
 }
 
-.login-section, .signup-section {
-    margin-bottom: 30px;
-}
-
 .form-group {
     margin-bottom: 20px;
 }
@@ -584,7 +581,26 @@ figcaption {
 }
 
 .password-input-wrapper {
+    margin-top: 15px;
     position: relative;
+}
+
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.login-section .form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.login-section .form-group input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
 }
 
 /* Signup Section Form Styles */
@@ -627,6 +643,9 @@ figcaption {
     margin-top: 10px;
     font-size: 14px;
     color: #666;
+}
+
+.password-field {
 }
 
 /* Terms and Privacy */
